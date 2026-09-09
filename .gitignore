@@ -1,0 +1,19 @@
+# ค่าประจำอินสแตนซ์ — มี id ของ Notion/Drive และลิงก์บอร์ด ไม่ commit ขึ้น repo สาธารณะ
+config.json
+config.*.json
+!config.example.json
+drive_folders.json
+
+# ผลลัพธ์ที่สร้างใหม่ได้เสมอ
+board.html
+data.json
+images.json
+manifest.json
+
+# ไฟล์ชั่วคราว
+prev.html
+preview.html
+inv.txt
+*.png
+__pycache__/
+*.pyc

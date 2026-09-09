@@ -1,0 +1,231 @@
+{
+  "id": "example-brand",
+  "brand": {
+    "title": "Example Content Hub",
+    "subtitle": "บอร์ดงานคอนเทนต์โซเชียล — ดึงจาก Notion",
+    "accent": "#0f4fc4",
+    "accentDark": "#6fa2ff"
+  },
+  "locale": {
+    "timezone": "Asia/Bangkok",
+    "yearOffset": 543,
+    "yearDigits": 2,
+    "months": [
+      "",
+      "ม.ค.",
+      "ก.พ.",
+      "มี.ค.",
+      "เม.ย.",
+      "พ.ค.",
+      "มิ.ย.",
+      "ก.ค.",
+      "ส.ค.",
+      "ก.ย.",
+      "ต.ค.",
+      "พ.ย.",
+      "ธ.ค."
+    ],
+    "syncNote": "น. · ทุกวัน 08:00",
+    "dateLocale": "th-TH"
+  },
+  "notion": {
+    "dataSource": "collection://REPLACE-WITH-YOUR-DATA-SOURCE-UUID",
+    "props": {
+      "title": "ชื่อคอนเทนต์",
+      "stage": "ขั้นตอน",
+      "ctype": "ประเภท",
+      "prio": "ลำดับความสำคัญ",
+      "sched": "กำหนดเผยแพร่",
+      "platform": "แพลตฟอร์ม",
+      "audience": "กลุ่มเป้าหมาย",
+      "cat": "หมวดข่าว",
+      "brand": "แบรนด์",
+      "published": "เผยแพร่แล้ว",
+      "approved": "อนุมัติ",
+      "render": "Render Status",
+      "ratio": "สัดส่วนภาพ",
+      "imgtext": "ข้อความบนภาพ",
+      "cta": "CTA",
+      "caption": "ร่างแคปชัน",
+      "prompt": "Prompt ภาพประกอบ",
+      "angle": "มุมเนื้อหา",
+      "srcurl": "ลิงก์ข่าวต้นฉบับ",
+      "guard": "Factual Guardrails",
+      "hashtag": "Hashtag"
+    },
+    "dateProps": [
+      "sched"
+    ],
+    "listProps": [
+      "platform",
+      "audience",
+      "cat",
+      "brand",
+      "ratio"
+    ],
+    "boolProps": [
+      "published",
+      "approved"
+    ]
+  },
+  "stages": [
+    {
+      "name": "กำลังเขียน",
+      "key": "write",
+      "note": "ร่างแคปชันอยู่"
+    },
+    {
+      "name": "กำลังออกแบบ",
+      "key": "design",
+      "note": "ทำภาพ / กราฟิก"
+    },
+    {
+      "name": "รอตรวจ",
+      "key": "review",
+      "note": "รอตรวจก่อนอนุมัติ"
+    },
+    {
+      "name": "อนุมัติแล้ว",
+      "key": "approved",
+      "note": "พร้อมทำภาพ / ตั้งเวลาโพสต์"
+    },
+    {
+      "name": "ตั้งเวลาแล้ว",
+      "key": "scheduled",
+      "note": "ตั้งคิวไว้แล้ว"
+    },
+    {
+      "name": "พักไว้",
+      "key": "hold",
+      "note": "พักไว้ก่อน"
+    }
+  ],
+  "unsetStage": {
+    "name": "ยังไม่จัดขั้นตอน",
+    "note": "ยังไม่ได้กำหนดขั้นตอนใน Notion"
+  },
+  "publishedStage": "เผยแพร่แล้ว",
+  "priority": {
+    "urgent": "ด่วน",
+    "high": "สูง",
+    "urgentLabel": "ด่วน",
+    "highLabel": "สำคัญสูง"
+  },
+  "renderStatus": {
+    "prompt_only": "ยังไม่มีภาพ — มีแต่ prompt",
+    "ready_for_comfyui": "prompt พร้อมส่ง ComfyUI",
+    "rendered": "เรนเดอร์แล้ว (ยังไม่แนบไฟล์)"
+  },
+  "hashtags": {
+    "base": [
+      "#YourBrand"
+    ],
+    "max": 8,
+    "byCat": {
+      "Solar": [
+        "#โซลาร์เซลล์",
+        "#SolarRooftop"
+      ],
+      "Battery / Storage": [
+        "#BESS",
+        "#ระบบกักเก็บพลังงาน"
+      ],
+      "EV": [
+        "#EVCharger",
+        "#รถยนต์ไฟฟ้า"
+      ],
+      "นโยบายรัฐ": [
+        "#นโยบายพลังงาน"
+      ],
+      "ตลาดพลังงาน": [
+        "#ตลาดพลังงาน"
+      ],
+      "คู่แข่ง": []
+    },
+    "byAudience": {
+      "เจ้าของบ้าน": [
+        "#โซลาร์บ้าน"
+      ],
+      "ธุรกิจ / โรงงาน": [
+        "#โซลาร์โรงงาน"
+      ],
+      "ช่าง / ตัวแทน": [
+        "#ช่างโซลาร์"
+      ]
+    },
+    "byType": {
+      "ข่าว": [
+        "#ข่าวพลังงาน"
+      ],
+      "ให้ความรู้": [
+        "#รู้ไว้ก่อนติดโซลาร์"
+      ],
+      "สินค้า": [
+        "#สินค้าพลังงาน"
+      ],
+      "โปรโมชัน": [
+        "#โปรโมชัน"
+      ]
+    },
+    "fromBrandProp": true
+  },
+  "labels": {
+    "postText": "ข้อความโพสต์",
+    "autoTags": "แฮชแท็ก auto",
+    "noCaption": "ยังไม่ได้เขียนแคปชันใน Notion",
+    "imgText": "ข้อความบนภาพ",
+    "promptSection": "Prompt ภาพประกอบ",
+    "guardSection": "ข้อห้าม / Factual guardrails",
+    "openSource": "ที่มาของข่าว",
+    "openRecord": "เปิดใน Notion",
+    "driveLink": "ไฟล์ภาพใน Drive",
+    "copy": "คัดลอกโพสต์",
+    "copied": "คัดลอกแล้ว ✓",
+    "noDate": "ยังไม่กำหนดวัน",
+    "noRatio": "ยังไม่ระบุสัดส่วน",
+    "images": "ภาพ",
+    "doneSection": "เผยแพร่แล้ว",
+    "doneEmpty": "ยังไม่มีงานที่ติ๊ก “เผยแพร่แล้ว” ใน Notion — งานที่โพสต์แล้วจะย้ายมาที่นี่เอง",
+    "searchPlaceholder": "ค้นหา หัวข้อ / แคปชัน / แฮชแท็ก…",
+    "all": "ทั้งหมด",
+    "syncedAt": "ซิงก์ล่าสุด",
+    "noHit": "ไม่พบงานที่ตรงกับที่ค้นหา",
+    "showing": [
+      "แสดง",
+      "จาก",
+      "งาน"
+    ],
+    "flags": {
+      "late": "เลยกำหนด",
+      "today": "วันนี้",
+      "inDays": [
+        "อีก",
+        "วัน"
+      ],
+      "approved": "อนุมัติแล้ว",
+      "noCaption": "ยังไม่มีแคปชัน"
+    },
+    "stats": [
+      "งานทั้งหมด",
+      "ยังไม่เผยแพร่",
+      "กำหนดใน 7 วัน",
+      "เลยกำหนด",
+      "ด่วน",
+      "รอตรวจ",
+      "อนุมัติแล้ว",
+      "ยังไม่มีภาพ",
+      "ยังไม่มีแคปชัน"
+    ],
+    "footer": "ปุ่ม <b>คัดลอกโพสต์</b> คัดลอกก้อน “ข้อความโพสต์” ทั้งก้อน (แคปชัน + CTA + แฮชแท็ก) · คลิกภาพเพื่อดูใหญ่ · แฮชแท็กที่ขึ้น <code>(auto)</code> สร้างจาก หมวดข่าว / กลุ่มเป้าหมาย / ประเภท / แบรนด์ — ถ้าอยากคุมเอง เพิ่ม property ชื่อ <code>Hashtag</code> ใน Notion แล้วบอร์ดจะใช้ค่านั้นแทน · ภาพในหน้านี้เป็นสำเนาย่อจากโฟลเดอร์ Drive ของแต่ละโพสต์ · แก้ข้อมูลทั้งหมดที่ Notion เท่านั้น หน้านี้เป็นภาพสะท้อนอย่างเดียว"
+  },
+  "images": {
+    "localFolder": "X:\\PATH\\TO\\YOUR\\IMAGE\\FOLDER",
+    "mountName": "REPLACE-WITH-CONNECTED-FOLDER-NAME",
+    "driveParent": "REPLACE-WITH-DRIVE-PARENT-FOLDER-ID",
+    "width": 760,
+    "quality": 80,
+    "matchBy": "sched",
+    "folderPattern": "^(\\d{4}-\\d{2}-\\d{2})"
+  },
+  "artifactUrl": "REPLACE-AFTER-FIRST-PUBLISH"
+}
